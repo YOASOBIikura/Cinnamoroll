@@ -7,7 +7,6 @@
         </span>
       </div>
       <div class="content">
-        <span>这里放需要放在对话框的内容</span>
         <slot></slot>
       </div>
       <div class="option">

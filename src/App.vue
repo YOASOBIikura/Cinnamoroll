@@ -18,13 +18,13 @@
   <div class="fle">
     <span>对话框组件: 1 title: String 对话框提示 2 需要一个v-model变量双向控制对话框的打开和关闭 3 @submit 指定回调函数完成对话</span>
     <button @click="changeModal">open</button>
-    <c-dialog v-model="op" @submit="handleClick"></c-dialog>
+    <c-dialog v-model="op" @submit="handleClick"><span>这里放需要放在对话框的内容</span></c-dialog>
   </div>
   <div class="fle">
     <span>抽屉组件：1 title: String 抽屉内容提示 2 position: left right top bottom 控制抽屉打开位置 3 同样需要一个v-model变量进行
       双向组件控制</span>
     <button @click="changeModal2">open</button>
-    <c-drawer v-model="ed" position="left"></c-drawer>
+    <c-drawer v-model="ed" position="left"><span>内容区</span></c-drawer>
   </div>
 </template>
 

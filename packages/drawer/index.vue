@@ -8,7 +8,7 @@
         <button @click="handleClose"><img src="../../public/cinnamoroll/close.png" alt="close"/></button>
       </div>
       <div class="bottom">
-        <span>内容区</span>
+        <slot></slot>
       </div>
     </div>
   </div>
@@ -113,6 +113,11 @@ function changePosition(){
           height: 24px;
         }
       }
+    }
+    .bottom{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
